@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+
+    <button onmouseover="display()">Click Here</button>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        let p1=document.querySelectorAll('p');
+        let display=()=>{
+            p1[0].innerHTML="";
+            p1[0].style.backgroundColor='red';
+            p1[1].innerHTML="Updated";
+            p1[1].style.backgroundColor='blue';
+            p1[2].innerHTML="Updated";
+            p1[2].style.backgroundColor='green';
+        } 
+    </script>
+    
+</body>
+</html>

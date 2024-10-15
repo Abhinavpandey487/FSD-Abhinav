@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Link Example</title>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank" id="myLink">Go to Google</a>
+    <br><br>
+    <button id="changeLinkButton">Change Link to AKTU</button>
+
+    <script>
+        
+        let link = document.querySelector('#myLink');
+        let button = document.querySelector('#changeLinkButton');
+        button.addEventListener('click', () => {
+            link.setAttribute('href', 'https://aktu.ac.in');
+            link.innerHTML = 'Go to AKTU'; 
+        });
+    </script>
+</body>
+</html>
