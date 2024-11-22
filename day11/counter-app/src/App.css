@@ -1,0 +1,91 @@
+.count-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 235vh;
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Add this to remove default margin */
+}
+
+.count-display {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #eef3f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.count-display__heading {
+  font-size: 6rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.count-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Add this for center alignment */
+}
+
+.count-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 30px; /* Increased padding for better visibility */
+  font-size: 1.5rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px; /* Increased width for better visibility */
+  text-align: center;
+}
+
+.count-btn:hover {
+  background-color: #4562a0;
+}
+
+.count-btn:active {
+  background-color: #423e8e;
+}
+
+.reset-btn {
+  background-color: #f44336;
+}
+
+.reset-btn:hover {
+  background-color: #e53935;
+}
+
+.reset-btn:active {
+  background-color: #c62828;
+}
+
+/* Add media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .count-display__heading {
+    font-size: 4rem;
+  }
+  .count-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .count-display__heading {
+    font-size: 3rem;
+  }
+  .count-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    width: 150px;
+  }
+}
